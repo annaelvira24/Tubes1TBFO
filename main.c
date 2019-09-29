@@ -10,7 +10,7 @@ int main(){
 
     /*ALGORITMA*/
 	printf("\n");
-    printf("====== HALO, SELAMAT DATANG DI THE SIMS ======\n");
+    printf("=========== HALO, SELAMAT DATANG DI THE SIMS ==========\n");
 	printf("\n");
     hygiene = 0;
     energy = 10;
