@@ -19,5 +19,4 @@ void CekAksi (int *ihygiene, int *ienergy, int *ifun, int addhygyene, int addene
 
 
 
-
 #endif

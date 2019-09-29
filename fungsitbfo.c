@@ -22,15 +22,16 @@ void CekAksi (int *ihygiene, int *ienergy, int *ifun, int addhygyene, int addene
     /* F.S jika aksi valid, nilai ihygiene, ienergy, dan ifun akan bertambah atau berkuran sesuai.
     Jika aksi tidak valid, akan dicetak tulisan "aksi tidak valid ke layar"*/
     {
-        if (*ihygiene + addhygyene <= 15 && *ihygiene + addhygyene >=0 && *ienergy + addenergy <=15 && *ienergy + addenergy >=0
-        && *ifun + addfun <=15 && *ifun + addfun >=0){
+        if (*ihygiene + addhygyene <= 15 && *ihygiene + addhygyene >=0 && *ienergy + addenergy <=15 
+        && *ienergy + addenergy >=0 && *ifun + addfun <=15 && *ifun + addfun >=0){
             *ihygiene += addhygyene;
             *ienergy += addenergy;
             *ifun += addfun;
-            printf("=====Aksi berhasil!=====\n");
+            printf("===== Aksi berhasil! =====\n");
         }
 
         else {
-            printf("=====Aksi tidak valid=====\n");
+            printf("===== Aksi tidak valid =====\n");
         }
     }
+
