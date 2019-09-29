@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 void TulisStatus(int hygiene, int energy, int fun);
-    /*Mencetak Status pemain ke layar>/
+    /*Mencetak Status pemain ke layar */
     /* I.S. hygiene, energy, fun terdefinisi */
     /* F.S. hygiene, enegry, fun tercetak ke layar*/
 
@@ -17,6 +17,9 @@ void CekAksi (int *ihygiene, int *ienergy, int *ifun, int addhygyene, int addene
     /* F.S jika aksi valid, nilai ihygiene, ienergy, dan ifun akan bertambah atau berkuran sesuai.
     Jika aksi tidak valid, akan dicetak tulisan "aksi tidak valid ke layar"*/
 
-
+void PilihanAksi();
+	/* Mencetak aksi-aksi yang dapat dilakukan pemain */
+	/* I.S sembarang */
+	/* F.S pilihan aksi-aksi tercetak ke layar */
 
 #endif

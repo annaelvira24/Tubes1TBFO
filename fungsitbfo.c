@@ -34,4 +34,34 @@ void CekAksi (int *ihygiene, int *ienergy, int *ifun, int addhygyene, int addene
             printf("===== Aksi tidak valid =====\n");
         }
     }
+	
+void PilihanAksi()
+	/* Mencetak aksi-aksi yang dapat dilakukan pemain */
+	/* I.S sembarang */
+	/* F.S pilihan aksi-aksi tercetak ke layar */
+	{
+		printf("===================== PILIHAN AKSI ====================\n");
+		printf(">> Tidur Siang\n");
+		printf(">> Tidur Malam\n");
+		printf(">> Makan Hamburger\n");
+		printf(">> Makan Pizza\n");
+		printf(">> Makan Steak and Beans\n");
+		printf(">> Minum Air\n");
+		printf(">> Minum Kopi\n");
+		printf(">> Minum Jus\n");
+		printf(">> Buang Air Kecil\n");
+		printf(">> Buang Air Besar\n");
+		printf(">> Bersosialisasi ke Kafe\n");
+		printf(">> Bermain Media Sosial\n");
+		printf(">> Bermain Komputer\n");
+		printf(">> Mandi\n");
+		printf(">> Cuci Tangan\n");
+		printf(">> Mendengarkan Musik di Radio\n");
+		printf(">> Membaca Koran\n");
+		printf(">> Membaca Novel\n");
+		printf("===== Jika Anda lupa aksi-aksi diatas, ketik help =====\n");
+		printf("\n");
+		
+		
+	}
 

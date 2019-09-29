@@ -9,17 +9,19 @@ int main(){
     char aksi[100];
 
     /*ALGORITMA*/
+	printf("\n");
     printf("====== HALO, SELAMAT DATANG DI THE SIMS ======\n");
+	printf("\n");
     hygiene = 0;
     energy = 10;
     fun = 0;
 
-    printf("\n");
+	PilihanAksi();
     TulisStatus(hygiene, energy, fun);
 
 
     while (!((energy == 15 && hygiene == 15 && fun == 15)||(energy == 0 && fun == 0 && hygiene == 0))){
-        printf(">> Masukkan aksi : ");
+		printf(">> Masukkan aksi : ");
         scanf("%[^\n]%*c", aksi);
         if (strcmpi(aksi, "bermain komputer") == 0){
             CekAksi (&hygiene, &energy, &fun, 0, -10, 15);
@@ -93,6 +95,14 @@ int main(){
             CekAksi(&hygiene, &energy, &fun, 0, -10, 10);
         }
 		
+		else if (strcmpi(aksi, "help") == 0){
+			PilihanAksi();
+		}
+		
+		else {
+			PilihanAksi();
+			printf("Aksi tidak terdefinisi! Silakan masukkan aksi yang terdefinisi diatas\n");
+		}
         TulisStatus(hygiene, energy, fun);
     }
 
