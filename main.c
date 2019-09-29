@@ -9,7 +9,7 @@ int main(){
     char aksi[100];
 
     /*ALGORITMA*/
-    printf("====== HALO, SELAMAT DATANG Di THE SIMS ======\n");
+    printf("====== HALO, SELAMAT DATANG DI THE SIMS ======\n");
     hygiene = 0;
     energy = 10;
     fun = 0;
