@@ -44,7 +44,55 @@ int main(){
         else if (strcmpi(aksi, "membaca novel") == 0){
             CekAksi(&hygiene, &energy, &fun, 0, -5, 10);
         }
-
+		
+		else if (strcmpi(aksi, "tidur siang") == 0){
+            CekAksi(&hygiene, &energy, &fun, 0, 10, 0);
+        }
+		
+		else if (strcmpi(aksi, "tidur malam") == 0){
+            CekAksi(&hygiene, &energy, &fun, 0, 15, 10);
+        }
+		
+		else if (strcmpi(aksi, "makan hamburger") == 0){
+            CekAksi(&hygiene, &energy, &fun, 0, 5, 0);
+        }
+		
+		else if (strcmpi(aksi, "makan pizza") == 0){
+            CekAksi(&hygiene, &energy, &fun, 0, 10, 0);
+        }
+		
+		else if (strcmpi(aksi, "makan steak and beans") == 0){
+            CekAksi(&hygiene, &energy, &fun, 0, 15, 0);
+        }
+		
+		else if (strcmpi(aksi, "minum air") == 0){
+            CekAksi(&hygiene, &energy, &fun, -5, 0, 0);
+        }
+		
+		else if (strcmpi(aksi, "minum kopi") == 0){
+            CekAksi(&hygiene, &energy, &fun, -10, 5, 0);
+        }
+		
+		else if (strcmpi(aksi, "minum jus") == 0){
+            CekAksi(&hygiene, &energy, &fun, -5, 10, 0);
+        }
+		
+		else if (strcmpi(aksi, "buang air kecil") == 0){
+            CekAksi(&hygiene, &energy, &fun, 5, 0, 0);
+        }
+		
+		else if (strcmpi(aksi, "buang air besar") == 0){
+            CekAksi(&hygiene, &energy, &fun, 10, -5, 0);
+        }
+		
+		else if (strcmpi(aksi, "bersosialisasi ke kafe") == 0){
+            CekAksi(&hygiene, &energy, &fun, -5, -10, 15);
+        }
+		
+		else if (strcmpi(aksi, "bermain media sosial") == 0){
+            CekAksi(&hygiene, &energy, &fun, 0, -10, 10);
+        }
+		
         TulisStatus(hygiene, energy, fun);
     }
 
