@@ -3,24 +3,44 @@
 #include <stdio.h>
 #include <string.h>
 
+#define Nmax 15
+#define Nmin 0
+
+
 int main(){
     /*KAMUS*/
+    char anykey;
     int energy, hygiene, fun;
     char aksi[100];
 
     /*ALGORITMA*/
 	printf("\n");
-    printf("=========== HALO, SELAMAT DATANG DI THE SIMS ==========\n");
-	printf("\n");
+
+    printf("ooooooooooooo ooooo   ooooo oooooooooooo     .oooooo..o ooooo ooo        ooooo  .oooooo..o \n");
+    printf("8'   888   `8 `888'   `888' `888'     `8    d8P'    `Y8 `888' `88.       .888' d8P'    `Y8 \n");
+    printf("     888       888     888   888            Y88bo.       888   888b     d'888  Y88bo.\n");
+    printf("     888       888ooooo888   888oooo8        `'Y8888o.   888   8 Y88. .P  888   `Y8888o.\n");  
+    printf("     888       888     888   888                 ` Y88b  888   8  `888'   888       `Y88b\n");
+    printf("     888       888     888   888       o    oo     .d8P  888   8    Y     888  oo     .d8P   \n");
+    printf("    o888o     o888o   o888o o888ooooood8    88888888P'  o888o o8o        o888o 88888888P'  \n");
+    printf("\n");
+
+    printf("press ENTER to continue ...\n");
+    scanf("%c", &anykey);
+    
     hygiene = 0;
     energy = 10;
     fun = 0;
 
+    printf("\n");
 	PilihanAksi();
+
+    printf("====*** SELAMAT BERMAIN ! ***====\n");
+    printf("\n");
     TulisStatus(hygiene, energy, fun);
 
 
-    while (!((energy == 15 && hygiene == 15 && fun == 15)||(energy == 0 && fun == 0 && hygiene == 0))){
+    while (!((energy == Nmax && hygiene == Nmax && fun == Nmax)||(energy == Nmin && fun == Nmin && hygiene == Nmin))){
 		printf(">> Masukkan aksi : ");
         scanf("%[^\n]%*c", aksi);
         if (strcmpi(aksi, "bermain komputer") == 0){
@@ -106,6 +126,19 @@ int main(){
         TulisStatus(hygiene, energy, fun);
     }
 
-    printf("Permainan telah selesai!\n");
+    printf("========Permainan telah selesai!=========\n");
+    if (energy == Nmax && hygiene == Nmax && fun == Nmax){
+        printf("____________________________________ \n");
+        printf("|                                   | \n");
+        printf("|       **** YOU WIN !!! ****       | \n");
+        printf("|___________________________________| \n");
+    }
+
+    else {
+        printf("____________________________________ \n");
+        printf("|                                   | \n");
+        printf("|          YOU LOSE :((             | \n");
+        printf("|___________________________________| \n");
+    }
 
 }
