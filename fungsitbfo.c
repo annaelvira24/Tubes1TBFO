@@ -16,15 +16,15 @@ void TulisStatus(int hygiene, int energy, int fun)
         printf("\n");
     }
 
-void CekAksi (int *ihygiene, int *ienergy, int *ifun, int addhygyene, int addenergy, int addfun)
+void CekAksi (int *ihygiene, int *ienergy, int *ifun, int addhygiene, int addenergy, int addfun)
     /*Memeriksa apakah akasi yang dilakukan valid atau tidak*/
     /* I.S ihygiene, ienergy, ifun, addhygyene, addenergy, addfun terdefinisi */
     /* F.S jika aksi valid, nilai ihygiene, ienergy, dan ifun akan bertambah atau berkuran sesuai.
     Jika aksi tidak valid, akan dicetak tulisan "aksi tidak valid ke layar"*/
     {
-        if (*ihygiene + addhygyene <= 15 && *ihygiene + addhygyene >=0 && *ienergy + addenergy <=15 
+        if (*ihygiene + addhygiene <= 15 && *ihygiene + addhygiene >=0 && *ienergy + addenergy <=15 
         && *ienergy + addenergy >=0 && *ifun + addfun <=15 && *ifun + addfun >=0){
-            *ihygiene += addhygyene;
+            *ihygiene += addhygiene;
             *ienergy += addenergy;
             *ifun += addfun;
             printf("===== Aksi berhasil! =====\n");
