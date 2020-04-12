@@ -4,9 +4,13 @@ KELOMPOK 28 (TAYO) - Anna Elvira Hartoyo (13518045) - Hengky Surya Angkasa (1351
 Source code program terdiri atas 3 buah file, yaitu fungsitbfo.h, fungsitbfo.c dan main.c.
 
 ## Cara kompilasi
-Windows : gcc fungsitbfo.c main.c -o main /n
+'''
+Windows : gcc fungsitbfo.c main.c -o main
 Linux : gcc fungsitbfo.c main.c -o main
+'''
 
 ## Cara run
+'''
 Windows : main.exe /n
 Linux : ./main
+'''
