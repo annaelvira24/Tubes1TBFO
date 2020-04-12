@@ -7,6 +7,6 @@ Source code program terdiri atas 3 buah file, yaitu fungsitbfo.h, fungsitbfo.c d
 Windows : gcc fungsitbfo.c main.c -o main
 Linux : gcc fungsitbfo.c main.c -o main
 
-##Cara run
+## Cara run
 Windows : main.exe
 Linux : ./main
